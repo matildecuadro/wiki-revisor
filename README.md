@@ -2,7 +2,7 @@
 
 Userscript de diagnóstico asistido por IA para artículos de Wikipedia en español sobre **arquitectura y patrimonio histórico-arquitectónico**, orientado a los criterios de artículo bueno (AB) y artículo destacado (AD).
 
-**Uso exclusivamente diagnóstico.** El script señala problemas y los explica; en ningún caso redacta, sugiere ediciones directas ni genera contenido para el artículo. Esta distinción entre uso diagnóstico y uso generativo de IA es un principio central del proyecto, no un matiz — es lo que lo hace compatible con la política de es.wikipedia sobre uso de IA en la edición de artículos.
+**Uso exclusivamente diagnóstico.** El script señala problemas y los explica; en ningún caso redacta, sugiere ediciones directas ni genera contenido para el artículo. Esta distinción entre uso diagnóstico y uso generativo de IA es un principio central del proyecto para ser compatible con la política de es.wikipedia sobre uso de IA en la edición de artículos.
 
 ## Estado actual
 
@@ -17,9 +17,9 @@ Evalúa el wikitexto del artículo frente a los criterios estructurales típicos
 - Extensión y cobertura global del artículo.
 - Tabla de contenidos.
 
-Cada problema detectado indica si se basa en una política real de Wikipedia (con el nombre exacto de la página), en una regla técnica de la plataforma (MediaWiki), o en un criterio orientativo basado en la práctica observada en artículos destacados de referencia — se distingue explícitamente para no presentar una recomendación como si fuera una norma obligatoria cuando no lo es.
+Cada problema detectado indica si se basa en una política real de Wikipedia, en una regla técnica de la plataforma (MediaWiki), o en un criterio orientativo basado en la práctica observada en artículos destacados de referencia. Se distingue explícitamente para no presentar una recomendación como si fuera una norma obligatoria cuando no lo es.
 
-El diagnóstico se genera a partir de un prompt calibrado con ejemplos de artículos destacados de patrimonio arquitectónico (Archivo General de Simancas, Angkor Wat, Basílica de San Pedro, Basílica de San Isidoro de León).
+El diagnóstico se genera a partir de un prompt calibrado con ejemplos de artículos destacados en Wikipedia en español de patrimonio arquitectónico (Archivo General de Simancas, Angkor Wat, Basílica de San Pedro, Basílica de San Isidoro de León).
 
 **Alcance actual**: el corpus de referencia y los criterios están calibrados específicamente para patrimonio arquitectónico. No se recomienda su uso para evaluar artículos de otras temáticas en esta versión.
 
@@ -33,7 +33,7 @@ Este proyecto no reproduce contenido de Wikipedia (licenciado bajo CC BY-SA) den
 - [Wikipedia:Artículos buenos](https://es.wikipedia.org/wiki/Wikipedia:Artículos_buenos)
 - [Wikipedia:Artículos destacados](https://es.wikipedia.org/wiki/Wikipedia:Artículos_destacados)
 
-**Nota sobre extensión**: el criterio de extensión y cobertura (30.000-85.000 caracteres para AD de patrimonio) es orientativo, basado en la práctica observada en los artículos de referencia listados abajo, no en una política formal. La página `Wikipedia:Tamaño de los artículos` es un ensayo (no una política ni convención) y está marcada como desactualizada en la propia Wikipedia, por lo que no se usa como fuente normativa en este proyecto.
+**Nota sobre extensión**: el criterio de extensión y cobertura (30.000-85.000 caracteres para AD de patrimonio) es orientativo, basado en la práctica observada en los artículos de referencia listados abajo, no en una política formal. 
 
 Artículos destacados de patrimonio arquitectónico usados como referencia para calibrar el prompt:
 
@@ -63,8 +63,6 @@ La clave se solicita la primera vez que se usa el script y se guarda localmente 
 Para el modelo de seguridad completo y recomendaciones sobre cómo configurar la clave de API, consulta [SECURITY.md](./SECURITY.md).
 
 ## Instalación
-
-*(Pendiente de página de documentación técnica con instrucciones paso a paso y capturas — ver Roadmap)*
 
 1. Instala Tampermonkey.
 2. Instala el script desde [`src/wiki-revisor.user.js`](./src/wiki-revisor.user.js).
